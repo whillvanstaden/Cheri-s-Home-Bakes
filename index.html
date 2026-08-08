@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cheri's Home Bakes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="hero">
+        <nav class="navbar">
+            <a href="#top" class="brand"><img src="images/logo.png" alt="Cheri's Home Bakes" class="logo"></a>
+            <a href="#order" class="nav-order">Order Now</a>
+        </nav>
+
+        <div class="hero-container" id="top">
+            <div class="hero-left">
+                <span class="badge">Handmade · Freshly Baked</span>
+                <h1>Salted Caramel<br>Chocolate Chip<br>Cookies</h1>
+                <p class="hero-text">Premium homemade cookies made from my secret recipe. Every cookie is baked fresh using quality ingredients and plenty of love.</p>
+                <div class="cookie-details">
+                    <div class="detail"><span class="detail-title">10 cm radius</span><strong>R10 each</strong></div>
+                    <div class="detail"><span class="detail-title">12 cm radius</span><strong>5 for R60</strong></div>
+                </div>
+                <a href="#order" class="hero-button">Order Now</a>
+            </div>
+            <div class="hero-right">
+                <img src="images/hero-cookie-v2.png" alt="Thin salted caramel chocolate chip cookie on a wooden board" class="hero-cookie">
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="about">
+            <div class="section-heading"><span>Made with passion</span><h2>Baked to Make You Smile</h2></div>
+            <div class="about-content">
+                <p>With years of baking experience and a desire to see people smile, I decided to bake premium tasty treats that I know will make you smile.</p>
+                <p>Every Salted Caramel Chocolate Chip Cookie is handmade using my own secret recipe and baked fresh for every order.</p>
+            </div>
+        </section>
+
+        <section id="order" class="order">
+            <div class="section-heading"><span>Place your order</span><h2>Choose Your Cookie</h2></div>
+            <div class="order-wrapper">
+                <form class="order-card" id="orderForm">
+                    <div class="form-group"><label for="customerName">Your Name</label><input type="text" id="customerName" placeholder="Enter your name" required></div>
+                    <div class="form-group"><label for="customerPhone">Cell Number</label><input type="tel" id="customerPhone" placeholder="Enter your cellphone number"></div>
+
+                    <fieldset class="cookie-choice"><legend>Cookie size</legend>
+                        <label class="choice active"><input type="radio" name="product" value="small" checked><span><strong>10 cm radius</strong><small>R10 per cookie</small></span></label>
+                        <label class="choice"><input type="radio" name="product" value="large"><span><strong>12 cm radius</strong><small>Pack of 5 · R60</small></span></label>
+                    </fieldset>
+
+                    <div class="form-group"><label for="quantity" id="quantityLabel">Number of cookies</label>
+                        <div class="quantity-box"><button type="button" id="minusBtn" aria-label="Reduce quantity">−</button><input type="number" id="quantity" value="1" min="1"><button type="button" id="plusBtn" aria-label="Increase quantity">+</button></div>
+                    </div>
+
+                    <div class="price-summary">
+                        <div class="summary-row"><span id="priceLabel">10 cm cookies</span><strong id="unitPrice">R10 each</strong></div>
+                        <div class="summary-row"><span id="countLabel">Cookies</span><strong id="cookieCount">1</strong></div>
+                        <div class="summary-row"><span>Subtotal</span><strong id="subTotal">R10</strong></div>
+                    </div>
+
+                    <div class="delivery-notice">Delivery is available for orders of <strong>50 cookies or more.</strong></div>
+                    <div class="form-group"><label>Collection or delivery</label><div class="delivery-options"><label class="radio"><input type="radio" name="delivery" value="Collection" checked> Collection</label><label class="radio"><input type="radio" name="delivery" value="Delivery"> Delivery</label></div></div>
+                    <div class="form-group" id="addressGroup" hidden><label for="address">Delivery Address</label><textarea id="address" rows="4" placeholder="Enter your delivery address"></textarea></div>
+                    <div class="form-group"><label for="notes">Notes</label><textarea id="notes" rows="3" placeholder="Anything you'd like me to know?"></textarea></div>
+                    <div class="grand-total"><span>Total</span><strong id="grandTotal">R10</strong></div>
+                    <button type="submit" class="whatsapp-button">Order via WhatsApp</button>
+                </form>
+                <aside class="order-info"><span>Our signature cookie</span><h3>Freshly baked, just for you.</h3><p>Choose your preferred size. The larger 12 cm radius cookie is available in packs of five.</p><div class="pack-callout"><strong>Delivery orders</strong><span>Available from 50 cookies.</span></div></aside>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer"><img src="images/logo.png" alt="Cheri's Home Bakes" class="footer-logo"><p>Freshly baked Salted Caramel Chocolate Chip Cookies, made with love and my secret recipe.</p><p class="footer-price">10 cm radius · R10 each &nbsp; | &nbsp; 12 cm radius · 5 for R60</p><p class="copyright">© 2026 Cheri's Home Bakes</p></footer>
+    <script src="script.js"></script>
+</body>
+</html>
