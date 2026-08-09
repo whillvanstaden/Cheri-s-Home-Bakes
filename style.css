@@ -12,3 +12,6 @@ section{padding:100px 7%}.section-heading{text-align:center;margin-bottom:45px}.
 /* Keep the phone landing page close to the logo-and-cookie reference layout. */
 @media (max-width:800px){.hero{padding:16px 6% 50px}.navbar{justify-content:center;margin:0 auto 14px}.brand{display:block}.logo{width:185px}.hero-container{display:flex;flex-direction:column;min-height:0;gap:22px;text-align:center}.hero-right{order:-1;align-self:auto;width:100%;display:block}.hero-left{padding:0}.hero-cookie{width:100%;min-height:0;aspect-ratio:1/1.08;border-radius:24px;object-fit:cover;object-position:center}}
 @media (max-width:450px){.logo{width:180px}.hero-container{gap:16px}.hero-cookie{border-radius:22px}}
+
+/* Let the logo overlap the top of the cookie photograph on phones. */
+@media (max-width:800px){.navbar{position:relative;z-index:2;margin-bottom:-60px}.hero-container{position:relative;z-index:1}}
