@@ -14,4 +14,4 @@ section{padding:100px 7%}.section-heading{text-align:center;margin-bottom:45px}.
 @media (max-width:450px){.logo{width:180px}.hero-container{gap:16px}.hero-cookie{border-radius:22px}}
 
 /* Let the logo overlap the top of the cookie photograph on phones. */
-@media (max-width:800px){.navbar{position:relative;z-index:2;margin-bottom:-60px}.hero-container{position:relative;z-index:1}}
+@media (max-width:800px){.navbar{position:relative;z-index:2;margin-bottom:-60px}.hero-container{position:relative;z-index:1;margin:0 auto}}
