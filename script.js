@@ -1,4 +1,4 @@
-const WHATSAPP_NUMBER = "27721234567";
+const WHATSAPP_NUMBER = "27823776545";
 
 const products = {
   small: { name: "10 cm radius cookie", unit: "cookie", price: 10, cookiesPerUnit: 1, priceText: "R10 each" },
