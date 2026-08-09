@@ -15,3 +15,5 @@ section{padding:100px 7%}.section-heading{text-align:center;margin-bottom:45px}.
 
 /* Let the logo overlap the top of the cookie photograph on phones. */
 @media (max-width:800px){.navbar{position:relative;z-index:2;margin-bottom:-60px}.hero-container{position:relative;z-index:1;margin:0 auto}.hero-right{position:relative;z-index:1;margin-top:-75px}}
+
+@media (max-width:800px){.footer{padding-top:20px}.footer-logo{width:155px;margin-bottom:12px}}
